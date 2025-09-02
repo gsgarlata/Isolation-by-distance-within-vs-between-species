@@ -1,3 +1,1 @@
-
-
-The multispecies genomic dataset could not be uploaded in this repository but can instead be found at https://datadryad.org/dataset/doi:10.5061/dryad.b2rbnzsp3#readme.
+This directory includes the input files for running the [Window-Based Genetic Distances](Window-Based Genetic Distances) pipeline. The multispecies genomic dataset could not be uploaded in this repository but can instead be found at https://datadryad.org/dataset/doi:10.5061/dryad.b2rbnzsp3#readme.
