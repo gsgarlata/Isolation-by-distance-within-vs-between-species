@@ -6,7 +6,15 @@ This directory provides the scripts to compute window-based genetic distances fr
 
 * [Compute Signal-to-Error](computeSignal2ErrorPCs.R): This script is used to quantify meaningful variation in genetic patterns across the genome (signal) and variation that represent demographic noise (noise). ‘signal’ is computed as the standard deviation of the sample’s position on PC1 over all windows, averaged over samples. ‘error’ is computed as the standard error of the sample’s position on PC1 across windows and samples using the block jackknife. See [Li and Ralph, 2019](https://academic.oup.com/genetics/article/211/1/289/5931130?login=false) for more details. For the purposes of selecting the most-parimonious window-size (higher signal-to-error variance), one should run this script for various window-sizes.
 
-* [Auxiliary R functions for Signal-to-Error analysis](functions_signal2error_PCs.R): This script contains all the relevant R functions needed for computing the standard deviation of the sample’s position on PC1 over all windows (signal) and the standard error of the sample’s position on PC1 across windows and samples using the block jackknife (noise). This script is loaded in script [Compute Signal-to-Error](computeSignal2ErrorPCs.R).
+* [Auxiliary R functions for Signal-to-Error analysis](functions_signal2error_PCs.R): This script contains all the relevant R functions needed for computing the standard deviation of the sample’s position on PC1 over all windows (signal) and the standard error of the sample’s position on PC1 across windows and samples using the block jackknife (noise). This script is loaded in [Compute Signal-to-Error](computeSignal2ErrorPCs.R) R script.
+
+* [Plot Signal-to-Error across Window-Sizes](makeSignal2ErrorDELTA_PLOT.R): This script is used to plot the difference in signal and noise across window sizes.
+
+* [Compute Window-Based Genetic Distances](createGeneticDistancesPIXY_like.R): This script is used to compute ‘Isolation-by-distance’ between candidate species. It first split the multispecies genomic dataset into windows of fixed size. Note that the window size is determined by number of SNPs and not by number of base-pairs. This means that a window size of 1000 will contain 1000 SNPs which may span over, let's say, a genomic segment of 2000 bp.
+
+* [Auxiliary R functions for Window-Based Genetic Distances](functions_regressionPIXYlike.R): This script contains all the relevant R functions needed for computing individual pairwise genetic differences. This script is loaded in the [Compute Window-Based Genetic Distances](createGeneticDistancesPIXY_like.R) R script.
+
+
 
 
 
