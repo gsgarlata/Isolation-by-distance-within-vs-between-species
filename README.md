@@ -1,1 +1,1 @@
-# isolation-by-distance-within-vs-between-species
+# Isolation-by-distance-within-vs-between-species
