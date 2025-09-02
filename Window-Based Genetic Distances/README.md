@@ -1,4 +1,4 @@
-# Computing window-based genetic distances from a multi-species genomic dataset.
+# Computing window-based genetic distances from a multi-species genomic dataset
 
 This directory provides the scripts to compute window-based genetic distances from a mulit-species genomic dataset (bcf format) based on an arbitrary window-size. It allows to select the most parsimonious window-size by comparing signal and error from the position of each individual in a PCA space across genomic windows. The signal and error variance is computed for each tested window size. This approach follows the methodology developped in [Li and Ralph, 2019](https://academic.oup.com/genetics/article/211/1/289/5931130?login=false). The input files used in [van Elst et al. 2025](https://www.nature.com/articles/s41559-024-02547-w) can be found in [input](input) and can be used to test the pipeline. For any question and doubts send an email to gabriele.sgarlata[at]gmail[dot]com. The pipeline should be executed in the following order:
 
